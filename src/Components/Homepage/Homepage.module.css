@@ -7,12 +7,22 @@
     justify-content: center;
     align-items: center;
     color: #EFECEC;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hi {
     font-weight: lighter;
-    z-index: 1;
+    z-index: 2;
     font-size: 1.5vw;
+    
 }
 
 .name {
