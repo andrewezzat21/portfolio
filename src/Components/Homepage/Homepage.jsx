@@ -5,7 +5,6 @@ import MailIcon from '@mui/icons-material/Mail';
 import MouseOutlinedIcon from '@mui/icons-material/MouseOutlined';
 import { animate, motion, useMotionTemplate, useMotionValue } from 'framer-motion';
 import { useEffect } from 'react';
-import Line from '../Line/Line';
 import Rectangle from '../Rectangle/Rectangle';
 import styles from "./Homepage.module.css";
 const COLORS = ["#0B2441", "#133760", "#3D5877", "#1A3350", "#15212F"];
@@ -29,15 +28,16 @@ function Homepage(){
 
     return(
         <motion.section className={styles.section} style={{backgroundImage}}>
-            <Line  width="100vw" height="0.1px" top="10vh" left="0em" color="#EFECEC" />    
-            <Line  width="100vw" height="0.1px" top="90vh" left="0em" color="#EFECEC" />    
 
+            <div className={styles.container}>
             <h1 className={styles.hi}>HI THERE 👋 I&apos;M</h1>
             <h1 className={styles.name}>ANDREW EZZAT</h1>
             <h1 className={styles.hi}>I&apos;M A <span className={styles.bold}>SOFTWARE ENGINEER</span></h1>
             <div className={styles.hidden}>
-                <Rectangle width="250px" height="20px" top="-1em" left="2em" color="#FC6736" />
+                <Rectangle width="250px" height="20px" top="54%" left="44%" color="#FC6736" />
             </div>
+            </div>
+
 
             <ul className={styles.icons}>
                 <li className={styles.icon}>
