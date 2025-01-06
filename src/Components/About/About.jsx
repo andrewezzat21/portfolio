@@ -7,7 +7,7 @@ const COLORS = ["#0B2441", "#133760", "#3D5877", "#1A3350", "#15212F"];
 function About(){
 
     const color = useMotionValue(COLORS[3]);
-    const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 100%, #031224 50%, ${color})`;
+    const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 100%, #031224 75%, ${color})`;
 
 
     useEffect(() => {
