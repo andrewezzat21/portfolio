@@ -83,7 +83,7 @@
 .mouse {
     position: absolute;
     bottom: 20vh;
-    color: #FC6736;
+    color: #ff5a1b;
     left: 50vw;
     display: block;
 }
@@ -92,7 +92,7 @@
     width: 100px;
     position: absolute;
     transform: translateX(-50%);
-    color: #FC6736;
+    color: #ff5a1b;
     bottom: 15vh;
     left: 50vw;
     display: block;

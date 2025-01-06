@@ -12,7 +12,7 @@ const COLORS = ["#0B2441", "#133760", "#3D5877", "#1A3350", "#15212F"];
 function Homepage(){
 
     const color = useMotionValue(COLORS[3]);
-    const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #031224 50%, ${color})`;
+    const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #001123 50%, ${color})`;
 
 
     useEffect(() => {
@@ -34,7 +34,7 @@ function Homepage(){
             <h1 className={styles.name}>ANDREW EZZAT</h1>
             <h1 className={styles.hi}>I&apos;M A <span className={styles.bold}>SOFTWARE ENGINEER</span></h1>
             <div className={styles.hidden}>
-                <Rectangle width="250px" height="20px" top="54%" left="44%" color="#FC6736" />
+                <Rectangle width="250px" height="20px" top="54%" left="44%" color="#ff5a1b" />
             </div>
             </div>
 
