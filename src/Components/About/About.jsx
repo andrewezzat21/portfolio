@@ -23,7 +23,7 @@ function About(){
 
     return(
         <motion.section className={styles.section} style={{backgroundImage}}>
-        
+            <img className={styles.avatar} src="images/avatar.png" alt="avatar" />
         <h1 className={styles.title}>ABOUT ME</h1>
         <p className={styles.about}>
         Hello, my name is Andrew, and I&apos;m a recent Computer Science graduate from Assiut University. I&apos;m also a Software Engineer with strong skills in <span className={styles.hl}>Java</span> and <span className={styles.hl}>Spring Boot</span>

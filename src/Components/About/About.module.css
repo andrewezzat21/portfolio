@@ -10,12 +10,24 @@
 .title{
     font-size: 3vw;
     position: absolute;
-    top: 25%;
-    left: 8%;
+    top: 28%;
+    left: 20%;
     z-index: 3;
 }
 
 
+.avatar{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border-color: #EFECEC;
+    border-width: 3px;
+    border-style: solid;
+    position: absolute;
+    top: 22%;
+    left: 8%;
+    z-index: 2;
+}
 
 .about{
     position: relative;
@@ -41,6 +53,15 @@
         display: none;
     }
 
+    .avatar{
+        top: 20%;
+        left: 50%;
+        translate: -50% -50%;
+        width: 64px;
+        height: 64px;
+        border-width: 1px;
+    }
+
     .title{
         left: 50%;
         translate: -50% -50%;
@@ -54,6 +75,11 @@
 }
 
 @media screen and (max-width: 767px) {
+
+
+    .avatar{
+        display: none;
+    }
 
     .title{
         top: 15%;
