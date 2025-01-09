@@ -36,6 +36,7 @@
 
 .bold {
     font-weight: 400;
+    position: relative;
 }
 
 .icons {
@@ -58,24 +59,24 @@
     font-size: 20px; 
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1200px) {
     .hidden {
         display: none;
     }
     .name{
-        font-size: 9vw;
+        font-size: 4rem;
     }
     .hi{
-        font-size: 3vw;
+        font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 767px) {
     .name{
-        font-size: 8vw;
+        font-size: 2.5rem;
     }
     .hi{
-        font-size: 3vw;
+        font-size: 1rem;
     }
 }
 
@@ -98,3 +99,13 @@
     display: block;
 }
 
+.bold::after{
+    content: '';
+    background: #ff5a1b;
+    height: 0.8em;
+    width: 100%;
+    position: absolute;
+    bottom: -0.2em;
+    left: 0.2em;
+    z-index: -1;
+}

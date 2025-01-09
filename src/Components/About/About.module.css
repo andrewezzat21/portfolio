@@ -5,31 +5,56 @@
     color: #EFECEC;
     scroll-snap-align: start;
     position: relative;
+    background-color: #001123;
+    display: flex;
+
 }
 
-.title{
-    font-size: 3vw;
-    position: absolute;
-    top: 32%;
-    left: 23%;
-    z-index: 3;
+.container{
+    min-width: 20vw;
+    display: flex;
+    justify-content: end;
 }
-
 
 .avatar{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    position: absolute;
-    top: 25%;
-    left: 9.5%;
-    z-index: 2;
+    z-index: 4;
+    margin-top: 30vh;
 }
 
+.container::before{
+    content: '';
+    background: #ff5a1b;
+    min-height: 80vh;
+    align-self: flex-end;
+    width: 150px;
+    z-index: 3;
+    position: absolute;
+    left: 6vw;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2em;
+
+}
+
+
+.title{
+    font-size: 2.5rem;
+    margin-top: 5em;
+    margin-bottom: 0.5em;
+    z-index: 3;
+}
+
+
 .about{
-    position: relative;
     top: 42%;
-    width: 42%;
+    width: 60%;
     left: 23%;
     line-height: 2.5em;
     color: #8F939A;
@@ -42,34 +67,33 @@
     color: #ff5a1b;
 }
 
-.container{
-    position: relative;
-}
+@media screen and (max-width: 1300px) {
 
-@media screen and (max-width: 1023px) {
-    .rectangle {
+    .container{
+        margin: 0em;
+        min-width: 0em;
+    }
+    .container::before {
         display: none;
     }
 
+    .section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .avatar{
-        top: 20%;
-        left: 50%;
-        translate: -50% -50%;
-        width: 100px;
+        margin-top: 0em;
         height: 100px;
-        border-width: 1px;
+        width: 100px;
     }
-
     .title{
-        left: 50%;
-        translate: -50% -50%;
+        margin-top: 1em;
     }
-
-    .about{
-        left: 50%;
-        top: 50%;
-        translate: -50% -50%;
-        width: 70%;
+    .text{
+        margin: 0em;
+        align-items: center;
     }
 }
 
@@ -77,13 +101,32 @@
 
 
     .avatar{
-        display: none;
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .title{
+        font-size: 1rem;
+    }
+
+    .text{
+        font-size: 0.7rem;
+    }
+
+    .about{
+        width: 80%;
+    }
+
+    /* .avatar{
+        
     }
 
     .title{
-        top: 15%;
+        top: 18%;
         left: 50%;
         translate: -50% -50%;
+        font-size: 1.7rem;
     }
 
     .about{
@@ -92,6 +135,7 @@
         translate: -50% -50%;
         width: 70%;
         font-size: smaller;
+        margin-top: 3em;
 
-    }
+    } */
 }
