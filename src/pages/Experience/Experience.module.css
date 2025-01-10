@@ -1,0 +1,188 @@
+:root{
+    --fs-title:2.5rem;
+    --fs-tabs:1rem;
+    --fs-postion:1.5rem;
+    --fs-date:1rem;
+    --fs-description:1rem;
+    --fs-list:1rem;
+}
+
+.section {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    color: #EFECEC;
+    scroll-snap-align: start;
+    background-color: #001123;
+}
+
+.header{
+    min-height: 30%;
+    position: relative;
+}
+
+.header::before{
+    content: '';
+    background-color: #ff5a1b;
+    position: absolute;
+    min-height: 100px;
+    width: 32em;
+    bottom: 1.5em;
+    z-index: 1;
+}
+
+.title{
+    position: absolute;
+    bottom: 0em;
+    left: 3em;
+    font-size: var(--fs-title);
+    z-index: 2;
+    font-weight: 600;
+}
+.container{
+    max-width: 100%;
+    min-height: 70%;
+}
+
+.tabs{
+    max-width: 100%;
+    display: flex;
+    gap: 1em;
+    margin-left: 7.5em;
+    margin-top: 2em;
+    font-size: var(--fs-tabs);
+}
+
+.content{
+    opacity: 80%;
+    margin-left: 7.5em;
+}
+
+.position{
+    font-weight: 600;
+    font-size: var(--fs-postion);
+}
+
+.hl{
+    color: #ff5a1b;
+}
+
+.date{
+    font-style: italic;
+    font-size: var(--fs-date);
+    opacity: 40%;
+    margin-top: 0.3em;
+}
+
+.description{
+    margin-top: 0.9em;
+    font-size: var(--fs-description);
+    max-width: 90ch;
+    margin-right: 2em;
+    opacity: 60%;
+}
+
+.list{
+    margin-top: 1em;
+    list-style: none;
+    font-size: var(--fs-list);
+}
+
+.list li{
+    margin-top: 1em;
+    position: relative;
+    padding-left: 25px;
+    opacity: 90%;
+}
+
+.list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem; /* Size of the SVG */
+    height: 1rem; /* Size of the SVG */
+    background: url('../../assets/point.svg') no-repeat center center;
+    background-size: contain;
+    z-index: 4;
+}
+
+.logocontainer{
+    margin-top: 0.7em;
+
+    display: flex;
+    align-items: center;
+}
+
+.companylogo{
+    width: 3rem;
+    height: 3rem;
+    margin-left: 0.2em;
+}
+
+
+@media screen and (max-width: 1200px) {
+   :root{
+    --fs-title:2.2rem;
+    --fs-tabs:0.9rem;
+    --fs-postion:1rem;
+    --fs-date:0.8rem;
+    --fs-description:0.8rem;
+    --fs-list:0.8rem;
+   }
+}
+
+@media screen and (max-width: 767px) {
+    .header::before{
+        display: none;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        justify-content: center;
+        align-content: center;
+    }
+    .title{
+        position: relative;
+        font-size: 1rem;
+        left: 0em;
+    }
+    .header{
+        min-height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content{
+        font-size: 1rem;
+        margin-left: 0em;
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
+    }
+    .tabs{
+        margin-left: 0em;
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+        font-size: 0.6rem;
+    }
+    .position{
+        font-size: 0.6rem;
+    }
+    .companylogo{
+        width: 2em;
+        height: 2em;
+    }
+    .date{
+        font-size: 0.6rem;
+    }
+    .description{
+        font-size: 0.6rem;
+    }
+    .list{
+        font-size: 0.6rem;
+    }
+}

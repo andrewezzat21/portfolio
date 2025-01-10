@@ -3,8 +3,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailIcon from '@mui/icons-material/Mail';
 import { animate, motion, useMotionTemplate, useMotionValue } from 'framer-motion';
 import { useEffect } from 'react';
+import Line from "../../components/Line/Line";
 import styles from "./Homepage.module.css";
 const COLORS = ["#0B2441", "#133760", "#3D5877", "#1A3350", "#15212F"];
+
 
 function Homepage(){
 
@@ -22,9 +24,13 @@ function Homepage(){
     }, );
 
 
-
     return(
+        
         <motion.section className={styles.section} style={{backgroundImage}}>
+
+            <Line  width="100vw" height="0.1px" top="10vh" left="0em" color="#EFECEC" />    
+            <Line  width="100vw" height="0.1px" top="90vh" left="0em" color="#EFECEC" />    
+
             <div className={styles.container}>
                 <h1 className={styles.hi}>HI THERE 👋 I&apos;M</h1>
                 <h1 className={styles.name}>ANDREW EZZAT</h1>
