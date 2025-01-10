@@ -1,0 +1,31 @@
+[
+    {
+        "id": 0,
+        "isActive": true,
+        "position":"JAVA BACKEND DEVELOPER INTERN",
+        "company":"EJADA SYSTEMS",
+        "date":"JUL 2024 - AUG 2024",
+        "description":"Ejada Systems has been a leading provider of IT services and solutions provider in the MENA region for nearly 20 years, specializing in enterprise digital transformation. During my internship, I gained experience in backend development and database management by learning and using the Spring Boot framework in Java",
+        "list":
+        [
+            "Developed and optimized a microservices-based e-commerce application, using Spring and Spring Boot.",
+            "Worked with databases using JPA and Hibernate, handled data validation and error management.",
+            "Built 40+ RESTful APIs for multiple microservices, improving scalability and performance."
+        ],
+        "logo": "/src/assets/c0.png"
+    },
+    {
+        "id": 1,
+        "isActive": false,
+        "position":"FULLSTACK DEVELOPER INTERN",
+        "company":"BLD.AI",
+        "date":"JUL 2022 - SEPTEMBER 2022",
+        "description":"bld.ai is a tech company focused on accelerating global innovation by turning ideas into scalable solutions. I was selected to join the internship after competing with more than 650+ competitive programmers from all over the Arab and African region, and I managed to secure a slot among other top talents. During my internship, I learned and gained experience in full stack development, designing and implementing both front-end user interfaces and back-end systems.",
+        "list":
+        [
+            "Built dynamic front-end applications using HTML, CSS, JavaScript, and React, for better user experience.",
+            "Developed backend systems using Django, focusing on data handling and application performance."
+        ],
+        "logo": "/src/assets/c1.png"
+    }
+]

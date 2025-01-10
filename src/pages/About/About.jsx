@@ -1,4 +1,6 @@
+import Line from "../../components/Line/Line";
 import styles from "./About.module.css";
+import profileImg from "/src/assets/avatar.png";
 
 function About(){
 
@@ -6,8 +8,12 @@ function About(){
 
     return(
         <section className={styles.section}>
+            
+            <Line  width="100vw" height="0.1px" top="10vh" left="0em" color="#EFECEC" />    
+            <Line  width="100vw" height="0.1px" top="90vh" left="0em" color="#EFECEC" />    
+
             <div className={styles.container}>
-                <img className={styles.avatar} src="images/avatar.png" alt="avatar" />
+                <img className={styles.avatar} src={profileImg} alt="avatar" />
             </div>
             <div className={styles.text}>
                 <h1 className={styles.title}>ABOUT ME</h1>
