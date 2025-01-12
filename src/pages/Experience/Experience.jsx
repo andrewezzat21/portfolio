@@ -37,9 +37,6 @@ export default function Experience(){
             <Line  width="100vw" height="0.1px" top="10vh" left="0em" color="#EFECEC" />    
             <Line  width="100vw" height="0.1px" top="90vh" left="0em" color="#EFECEC" />    
 
-            
-
-
             <div className={styles.header}>
                 <h1 className={styles.title}>EXPERIENCE</h1>
             </div>

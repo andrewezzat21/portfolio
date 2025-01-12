@@ -4,10 +4,12 @@
 	cursor:pointer;
 	color: #EFECEC;
     opacity: 60%;
-    font-size: var(--fz-xxs);
+    font-size: var(--fz-md);
 	/* font-size:1.1rem;
     font-weight: 500; */
     position: relative;
+    font-size: var(--fz-xxs);
+
 }
 
 
