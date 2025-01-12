@@ -1,5 +1,6 @@
 
 :root{
+    --fz-xxxs: 10px;
     --fz-xxs: 12px;
     --fz-xs: 13px;
     --fz-sm: 14px;
@@ -9,6 +10,10 @@
     --fz-xxl: 22px;
     --fz-heading: 40px;
     --border-radius: 4px;
+    --c-w:#EFECEC;
+    --c-o:#ff5a1b;
+    --c-b:#001123;
+    --c-bb:rgb(3,30,58)
 }
 
 *{
@@ -16,4 +21,5 @@
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
+
 

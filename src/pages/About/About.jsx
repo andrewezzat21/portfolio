@@ -1,13 +1,26 @@
+import { animate, motion, useMotionTemplate, useMotionValue } from 'framer-motion';
+import { useEffect } from 'react';
 import Line from "../../components/Line/Line";
 import styles from "./About.module.css";
 import profileImg from "/src/assets/avatar.png";
+const COLORS = ["#0B2441", "#133760", "#3D5877", "#1A3350", "#15212F"];
+
 
 function About(){
 
-
+    const color = useMotionValue(COLORS[3]);
+    const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 100%, #031224 50%, ${color})`;
+    useEffect(() => {
+        animate(color, COLORS, {
+            ease: 'easeInOut',
+            duration: 5,
+            repeat: Infinity,
+            repeatType: 'mirror'
+        });
+    }, );
 
     return(
-        <section className={styles.section}>
+        <motion.section className={styles.section} style={{backgroundImage}}>
             
             <Line  width="100vw" height="0.1px" top="10vh" left="0em" color="#EFECEC" />    
             <Line  width="100vw" height="0.1px" top="90vh" left="0em" color="#EFECEC" />    
@@ -28,7 +41,7 @@ function About(){
             {/* <div className={styles.rectangle}>
                 <Rectangle width='150px' height='80vh' top='20%' left='5%' color='#ff5a1b'/>
             </div> */}
-        </section>
+        </motion.section>
     );
 }
 

@@ -1,6 +1,9 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
+import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailIcon from '@mui/icons-material/Mail';
+import MouseOutlinedIcon from '@mui/icons-material/MouseOutlined';
+
 import { animate, motion, useMotionTemplate, useMotionValue } from 'framer-motion';
 import { useEffect } from 'react';
 import Line from "../../components/Line/Line";
@@ -54,6 +57,11 @@ function Homepage(){
                     </a>
                 </li>
             </ul>
+
+            <MouseOutlinedIcon className={styles.mouse}/>
+            <motion.div className={styles.arrow} animate={{ y: [0, -10, 0] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}>
+            <KeyboardArrowDownOutlinedIcon  />
+            </motion.div>
         </motion.section>
     );
 }
