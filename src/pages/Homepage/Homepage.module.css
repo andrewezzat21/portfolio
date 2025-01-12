@@ -74,6 +74,9 @@
     .hi{
         font-size: 1rem;
     }
+    .dot{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -85,23 +88,21 @@
     }
 }
 
+.mouseContainer{
+justify-self:  flex-end;
+}
 
 .mouse {
-    position: absolute;
-    bottom: 20vh;
     color: #ff5a1b;
-    left: 50vw;
-    display: block;
+    bottom: 20vh;
+    position: absolute;
 }
 
 .arrow {
-    width: 100px;
-    position: absolute;
     transform: translateX(-50%);
     color: #ff5a1b;
     bottom: 15vh;
-    left: 50vw;
-    display: block;
+    position: absolute;
 }
 
 .bold::after{
@@ -114,3 +115,19 @@
     left: 0.2em;
     z-index: -1;
 }
+
+
+
+.dot{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 100;
+    pointer-events: none;
+    width: 10px;
+    height: 10px;
+    background-color: #ff5a1b;
+  }
+  
