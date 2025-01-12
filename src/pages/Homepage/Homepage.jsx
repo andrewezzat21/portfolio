@@ -3,7 +3,7 @@ import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDown
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailIcon from '@mui/icons-material/Mail';
 import MouseOutlinedIcon from '@mui/icons-material/MouseOutlined';
-
+import fadeIn from "../variants.js";
 import { animate, motion, useMotionTemplate, useMotionValue } from 'framer-motion';
 import { useEffect } from 'react';
 import Line from "../../components/Line/Line";
@@ -34,13 +34,23 @@ function Homepage(){
             <Line  width="100vw" height="0.1px" top="10vh" left="0em" color="#EFECEC" />    
             <Line  width="100vw" height="0.1px" top="90vh" left="0em" color="#EFECEC" />    
 
-            <div className={styles.container}>
+            <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once: false, amount: 0.5}}
+            className={styles.container}>
                 <h1 className={styles.hi}>HI THERE 👋 I&apos;M</h1>
                 <h1 className={styles.name}>ANDREW EZZAT</h1>
                 <h1 className={styles.hi}>I&apos;M A <span className={styles.bold}>SOFTWARE ENGINEER</span></h1>
-            </div>
+            </motion.div>
 
-            <ul className={styles.icons}>
+            <motion.ul
+            variants={fadeIn("up", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once: false, amount: 0.1}}
+            className={styles.icons}>
                 <li className={styles.icon}>
                     <a className="icon-link" href="mailto:andrewezzatmn16@gmail.com" >
                     <MailIcon htmlColor="#EFECEC" />
@@ -56,7 +66,7 @@ function Homepage(){
                     <GitHubIcon htmlColor="#EFECEC" />
                     </a>
                 </li>
-            </ul>
+            </motion.ul>
 
             <MouseOutlinedIcon className={styles.mouse}/>
             <motion.div className={styles.arrow} animate={{ y: [0, -10, 0] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}>

@@ -1,10 +1,11 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 import Card from "../../components/Card/Card";
 import Line from "../../components/Line/Line";
 import Tab from "../../components/Tab/Tab";
+import fadeIn from "../variants.js";
 import styles from "./Projects.module.css";
 import ProjectsData from "./projects-data.json";
-
 
 export default function Projects(){
 
@@ -34,16 +35,26 @@ export default function Projects(){
             <Line  width="100vw" height="0.1px" top="90vh" left="0em" color="#EFECEC" />    
 
             <div className={styles.container}>
-                <h1 className={styles.title}>PROJECTS</h1>
+                <motion.h1
+                variants={fadeIn("down", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: false, amount: 0.7}}
+                className={styles.title}>PROJECTS</motion.h1>
 
-                <div className={styles.mainSection}>
+                <motion.div 
+                variants={fadeIn("left", 0.1)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: false, amount: 0.7}}
+                className={styles.mainSection}>
                     <div className={styles.tabs}>
                         {tabElements}
                     </div>
                     <div className={styles.projectsContainer}>
                         <Card active={active}/>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

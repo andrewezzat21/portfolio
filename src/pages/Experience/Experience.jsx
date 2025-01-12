@@ -1,10 +1,10 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 import Line from "../../components/Line/Line";
 import Tab from "../../components/Tab/Tab";
+import fadeIn from "../variants.js";
 import styles from "./Experience.module.css";
 import TabsData from "./experience-data.json";
-
-
   
 
 export default function Experience(){
@@ -37,11 +37,21 @@ export default function Experience(){
             <Line  width="100vw" height="0.1px" top="10vh" left="0em" color="#EFECEC" />    
             <Line  width="100vw" height="0.1px" top="90vh" left="0em" color="#EFECEC" />    
 
-            <div className={styles.header}>
+            <motion.div
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once: false, amount: 0.7}}
+            className={styles.header}>
                 <h1 className={styles.title}>EXPERIENCE</h1>
-            </div>
+            </motion.div>
 
-            <div className={styles.container}>
+            <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once: false, amount: 0.7}}
+            className={styles.container}>
                 <div className={styles.tabs}>
                     {tabElements}
                 </div>
@@ -56,7 +66,7 @@ export default function Experience(){
                         {list}
                     </ul>
                 </div>
-            </div>
+            </motion.div>
 
         </section>
     );
