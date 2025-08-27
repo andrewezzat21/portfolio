@@ -12,7 +12,7 @@
             "Worked with databases using JPA and Hibernate, handled data validation and error management.",
             "Built 40+ RESTful APIs for multiple microservices, improving scalability and performance."
         ],
-        "logo": "/src/assets/c0.png"
+        "logo": "./images/c0.png"
     },
     {
         "id": 1,
@@ -26,6 +26,6 @@
             "Built dynamic front-end applications using HTML, CSS, JavaScript, and React, for better user experience.",
             "Developed backend systems using Django, focusing on data handling and application performance."
         ],
-        "logo": "/src/assets/c1.png"
+        "logo": "./images/c1.png"
     }
 ]

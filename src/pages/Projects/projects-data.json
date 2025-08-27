@@ -7,16 +7,26 @@
         "description": "Shahrazad is an application for generating AI audiobooks using emotional text-to-speech and voice cloning models to create such an engaging listening experience.",
         "tech": "Python - Sql - FastAPI",
         "info": "https://www.linkedin.com/feed/update/urn:li:activity:7228089278847713284",
-        "img":"/src/assets/p0.png"
+        "img":"./images/p0.png"
     },
     {
         "id":1,
+        "isActive":false,
+        "type": "FEATURED PROJECT",
+        "name": "EVNT. | EVENT BOOKING WEBAPP",
+        "description":"Full website that allows you to browse and book events around you",
+        "tech":"Spring Boot, React, MySQL, TailwindCSS",
+        "info":"https://www.linkedin.com/feed/update/urn:li:activity:7331290043782713344/",
+        "img":"./images/p2.png"
+    },
+    {
+        "id":2,
         "isActive":false,
         "type": "FEATURED PROJECT",
         "name": "MAZE GENERATOR",
         "description":"A maze generator using the depth first search algorithm and developed a solution verifier with breadth first search algorithm.",
         "tech":"JavaScript - p5 Library",
         "info":"https://www.linkedin.com/feed/update/urn:li:activity:7068919334806446080/",
-        "img":"/src/assets/p1.png"
+        "img":"./images/p1.png"
     }
 ]

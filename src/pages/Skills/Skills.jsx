@@ -27,14 +27,14 @@ function Skills(){
                 whileInView={"show"}
                 viewport={{once: false, amount: 0.7}} 
                 className={styles.listItems}>
-                    <li className={styles.listItem}><img src="src/assets/skills/java.svg"/>Java</li>
-                    <li className={styles.listItem}><img src="src/assets/skills/springboot.svg"/>Spring Boot</li>
-                    <li className={styles.listItem}><img src="src/assets/skills/javascript.svg"/>Javascript</li>
-                    <li className={styles.listItem}><img src="src/assets/skills/react.svg"/>React</li>
-                    <li className={styles.listItem}><img src="src/assets/skills/c++.svg"/>C++</li>
-                    <li className={styles.listItem}><img src="src/assets/skills/mysql.svg"/>MySQL</li>
-                    <li className={styles.listItem}><img src="src/assets/skills/git.svg"/>Git</li>
-                    <li className={styles.listItem}><img src="src/assets/skills/docker.svg"/>Docker</li>
+                    <li className={styles.listItem}><img src="./images/java.svg"/>Java</li>
+                    <li className={styles.listItem}><img src="./images/springboot.svg"/>Spring Boot</li>
+                    <li className={styles.listItem}><img src="./images/javascript.svg"/>Javascript</li>
+                    <li className={styles.listItem}><img src="./images/react.svg"/>React</li>
+                    <li className={styles.listItem}><img src="./images/c++.svg"/>C++</li>
+                    <li className={styles.listItem}><img src="./images/mysql.svg"/>MySQL</li>
+                    <li className={styles.listItem}><img src="./images/git.svg"/>Git</li>
+                    <li className={styles.listItem}><img src="./images/docker.svg"/>Docker</li>
                 </motion.ul>
             </div>
 
