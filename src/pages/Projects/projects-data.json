@@ -23,6 +23,26 @@
         "id":2,
         "isActive":false,
         "type": "FEATURED PROJECT",
+        "name": "Payment Gateway System",
+        "description":"Payment Gateway System allows Merchant registration, Payment link generation and transaction handling",
+        "tech":"Java, Spring Boot, MySQL, Docker, Kafka",
+        "info":"https://www.linkedin.com/feed/update/urn:li:activity:7318224143051579392/",
+        "img":"./images/p3.png"
+    },
+    {
+        "id":3,
+        "isActive":false,
+        "type": "FEATURED PROJECT",
+        "name": "E-commerce Backend APIs",
+        "description":"REST APIs for user, product, and cart management using microservices.",
+        "tech":"Java, Spring Boot, Microservices, MySQL, Docker, Kafka",
+        "info":"https://www.linkedin.com/feed/update/urn:li:activity:7314236616837898240/",
+        "img":"./images/p4.png"
+    },
+    {
+        "id":4,
+        "isActive":false,
+        "type": "FEATURED PROJECT",
         "name": "MAZE GENERATOR",
         "description":"A maze generator using the depth first search algorithm and developed a solution verifier with breadth first search algorithm.",
         "tech":"JavaScript - p5 Library",
